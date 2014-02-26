@@ -1,0 +1,13 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	background: white url("../img/dark_matter.png") repeat;
+}
+
+.yellow {
+    color: #D69533
+    font-family: 'Russo One', sans-serif;
+}
+
