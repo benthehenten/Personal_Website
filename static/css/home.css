@@ -12,8 +12,9 @@ a{
 }
 
 .nametext {
-    color: #3878CC;
+    color: #54546B;
     font-family: 'Varela Round', sans-serif;
+    font-weight: 400;
     font-size: 5rem; 
     text-align: center;
     margin: 1rem;
@@ -26,6 +27,9 @@ a{
 	right: 0;
     font-family: 'Varela Round', sans-serif;
     font-size: 2rem; 
+    color: #54546B !important;
+    background-color: rgba(0,0,0,0) !important;
+
 }
 
 .main {
@@ -74,6 +78,7 @@ a{
 	border-radius: 50%;
 	display: inline-block; 
 	margin: 0 .5rem;
+	transition: ease all .1s;
 }
 
 .description{
@@ -85,28 +90,36 @@ a{
 }
 
 .purple {
-	color: #8E31BD;
-	border-color: #8E31BD; 
-	
+
+	color: #9A60D6;
+	border-color: #9A60D6;
 }
-.purple:hover{
+.purple:hover, .hover.purple{
 	color: white;
-	background-color: #8E31BD;
+	background-color: #9A60D6;
 }
 
-.orange {
-	color: #FF9D00;
-	border-color: #FF9D00; 
+.blue {
+	color: #3878CC;
+	border-color: #3878CC; 
 }
-.orange:hover{
+.blue:hover, .hover.blue{
 	color: white;
-	background-color: #FF9D00;
+	background-color: #3878CC;
+}
+.orange {
+	color: #E58D00;
+	border-color: #E58D00; 
+}
+.orange:hover, .hover.orange{
+	color: white;
+	background-color: #E58D00;
 }
 .green{
 	color: #36C235;
 	border-color: #36C235; 
 }
-.green:hover{
+.green:hover, .hover.green{
 	color: white;
 	background-color: #36C235;
 }
@@ -115,7 +128,7 @@ a{
 	color: #B22D12;
 	border-color: #B22D12; 
 }
-.red:hover{
+.red:hover, .hover.red{
 	color: white;
 	background-color: #B22D12;
 }
