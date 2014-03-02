@@ -132,6 +132,22 @@ a{
 	color: white;
 	background-color: #B22D12;
 }
+@media only screen and (max-width: 600){
+	html{
+		font-size: 10px;
+	}
+
+	.description{
+		display: none !important;
+	}
+	.button{
+		font-size: 1.8rem;
+	}
+	.buttons{
+		max-width: 320px !important; 
+		margin: 0 auto;
+	}
+}
 @media only screen and (max-width: 480px){
 	html{
 		font-size: 10px;
@@ -142,6 +158,22 @@ a{
 	}
 	.button{
 		font-size: 2rem;
+	}
+	.buttons{
+		max-width: 320px !important; 
+		margin: 0 auto;
+	}
+}
+@media only screen and (max-width: 320px){
+	html{
+		font-size: 8px;
+	}
+
+	.description{
+		display: none !important;
+	}
+	.button{
+		font-size: 2.2rem;
 	}
 	.buttons{
 		max-width: 320px !important; 
