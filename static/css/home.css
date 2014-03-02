@@ -11,6 +11,58 @@ a{
 	color: inherit;
 }
 
+.navbar{
+	height: 4rem;
+	background-color: rgb(254, 253, 245);	
+	width: 100%;
+}
+
+.fixed{
+	position: fixed;
+	top: 0;
+}
+
+.navbar .nametext{
+	font-size: 2.5rem;
+	float: left;
+	margin: .5rem;
+}
+
+.navbar .buttons{
+	float: right;
+	height: 4rem;
+
+}
+.navbar .content{
+	margin: 0 auto;
+	max-width: 50rem;
+}
+
+.navbar .button{
+	height: 2rem;
+	width: 2rem;
+	padding: .1rem;
+	font-size: 1.3rem;
+	border: 3px solid; 
+	margin-top: 1rem; 
+}
+
+
+.homepage{
+	height: 100vh;
+
+}
+
+.navbar .buttoninner{
+	height: 2rem;
+	margin-top: -1rem; 
+}
+
+.projectspage{
+	height: 100vh;
+	background-color: #3878CC;
+}
+
 .nametext {
     color: #54546B;
     font-family: 'Varela Round', sans-serif;
@@ -81,6 +133,8 @@ a{
 	transition: ease all .1s;
 }
 
+
+
 .description{
 	visibility: hidden;
 }
@@ -132,6 +186,16 @@ a{
 	color: white;
 	background-color: #B22D12;
 }
+
+.projectcontent{
+	margin: 0 auto;
+	min-height: 50%;
+	max-width: 50rem;
+	padding: 3rem 0;
+
+}
+
+
 @media only screen and (max-width: 600){
 	html{
 		font-size: 10px;
