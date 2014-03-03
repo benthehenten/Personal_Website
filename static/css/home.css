@@ -3,7 +3,7 @@ html, body {
 	margin: 0;
 	padding: 0;
 	position: relative;
-	background-color: rgb(254, 253, 245); 
+	background-color: #3878CC; 
 
 }
 
@@ -11,20 +11,32 @@ a{
 	color: inherit;
 }
 
+hr{
+	border: none;
+	border-bottom: .15rem solid #54546B; 
+	margin: 0 -1rem;
+}
+
 .navbar{
 	height: 4rem;
-	background-color: rgb(254, 253, 245);	
+	background-color: #262626;	
 	width: 100%;
 	padding: 0 1rem ;
+	position: fixed;
+	visibility: hidden;
+	top: -4rem;
+	transition: ease .8s all;
 }
 
 .fixed{
-	position: fixed;
 	top: 0;
+	z-index: 1; 
+	visibility: visible;
 }
 
 .navbar .nametext{
-	font-size: 2.5rem;
+	color: rgb(254, 253, 245);
+	font-size: 2.7rem;
 	float: left;
 	margin: .5rem;
 }
@@ -37,63 +49,78 @@ a{
 }
 .navbar .content{
 	margin: 0 auto;
-	max-width: 50rem;
+	max-width: 70rem;
 }
 
 .navbar .button{
-	height: 2.5rem;
-	width: 2.5rem;
+	height: 2.2rem;
+	width: 2.2rem;
 	padding: .1rem;
-	font-size: 1.6rem;
+	font-size: 1.4rem;
 	border: 3px solid; 
-	margin-top: 1rem; 
+	margin-top: 1.1rem; 
 }
 .navbar .buttoninner{
 	top: 50%;
 	left: 0;
 	right: 0;
-	height: 3rem;
-	margin-top: -1.5rem; 
+	margin-top: -.8rem; 
+	height: 2rem;
 }
 
 
 .homepage{
-	height: 100vh;
+	height: 100%;
+	background-color: rgb(254, 253, 245);
 
-}
-
-.navbar .buttoninner{
-	height: 2rem;
-	margin-top: -1rem; 
 }
 
 .projectspage{
-	height: 100vh;
+	min-height: 100%;
+	position: relative;
 	background-color: #3878CC;
 }
 
 img{
-	height: 20rem;
+	height: 10rem;
+	max-width: 100%;
 }
 
 .project{
 	background-color: white;
+	border-radius: 10px;
+	width: 45%;
+	padding: 1rem;
+	border: .3rem #54546B solid;
+	display: inline-block;
 
 }
-.projectimage{
-	display: inline;
-
-	float: left;
+.pictures{
+	text-align: center;
+	width: 100%;
 }
+
+.right{
+	float: right;
+}
+
 .projectcontent{
-	width: 80%;
+	width: 85%;
+	margin: 0 auto;
+	max-width: 70rem;
+	position: absolute;
+	top: 50%;
+	margin-top: -12rem;
+	height: 24rem;
+	left: 0;
+	right: 0; 
 }
 
 .bodytext{
 	color: #54546B;
     font-family: 'Varela Round', sans-serif;
     font-weight: 400;
-    font-size: 1.4rem; 
+    font-size: 1rem; 
 }
 
 .nametext {
@@ -181,57 +208,72 @@ img{
 	color: #9A60D6;
 	border-color: #9A60D6;
 }
-.purple:hover, .hover.purple{
-	color: white;
-	background-color: #9A60D6;
-}
+
 
 .blue {
 	color: #3878CC;
 	border-color: #3878CC; 
 }
-.blue:hover, .hover.blue{
-	color: white;
-	background-color: #3878CC;
-}
+
 .orange {
 	color: #E58D00;
 	border-color: #E58D00; 
 }
-.orange:hover, .hover.orange{
-	color: white;
-	background-color: #E58D00;
-}
+
 .green{
 	color: #36C235;
 	border-color: #36C235; 
-}
-.green:hover, .hover.green{
-	color: white;
-	background-color: #36C235;
 }
 
 .red {
 	color: #B22D12;
 	border-color: #B22D12; 
 }
+
+@media only screen and (min-width: 769px){
 .red:hover, .hover.red{
 	color: white;
 	background-color: #B22D12;
+	border-color: #B22D12; 
 }
-
-.projectcontent{
-	margin: 0 auto;
-	min-height: 50%;
-	max-width: 50rem;
-	padding: 3rem 0;
-
+.purple:hover, .hover.purple{
+	color: white;
+	background-color: #9A60D6;
+	border-color: #9A60D6;
 }
-
-
-@media only screen and (max-width: 600){
+.orange:hover, .hover.orange{
+	color: white;
+	background-color: #E58D00;
+	border-color: #E58D00; 
+}
+.blue:hover, .hover.blue{
+	color: white;
+	background-color: #3878CC;
+	border-color: #3878CC;
+}
+.green:hover, .hover.green{
+	color: white;
+	background-color: #36C235;
+	border-color: #36C235; 
+}
+}
+@media only screen and (max-width: 768px){
 	html{
 		font-size: 10px;
+	}
+
+	.project{
+		width: auto;
+		margin-top: 5rem;
+	}
+	.projectcontent{
+		position: relative;
+		margin-top: 0;
+		top: inherit;
+
+	}
+	.bodytext{
+		font-size: 2rem;
 	}
 
 	.description{
@@ -244,6 +286,7 @@ img{
 		max-width: 320px !important; 
 		margin: 0 auto;
 	}
+
 }
 @media only screen and (max-width: 480px){
 	html{
@@ -265,6 +308,7 @@ img{
 	html{
 		font-size: 8px;
 	}
+
 
 	.description{
 		display: none !important;
