@@ -1,2 +1,6 @@
-<a href = "http://whotweeted.it"><i>Who Tweeted It</i></a> is a game I made with <a href="http://danrs.ch">Dan Schlosser</a> and <a href="http://evantarrh.com">Evan Tarrh</a> at Columbia's devfest hackathon in February, 2014. We used the Twitter Api to get tweets from popular celebrities and make a simple quiz game. We used a python/flask backend and foundation in the front to make it look nice. We won a prize from Google at the hackathon, but the real reward was having over 16,000 page views in the first 2 weeks after launch across 44 states, and 39 countries--all from us posting about it on facebook and twitter. 
+<a href = "http://whotweeted.it"><i>Who Tweeted It</i></a> is a game I made with <a href="http://danrs.ch">Dan Schlosser</a> and <a href="http://evantarrh.com">Evan Tarrh</a> at Columbia's devfest hackathon in February, 2014. We used the Twitter API to get tweets from popular celebrities and make a simple quiz game. It's built on a python/flask backend with foundation in front to make it look nice. We won a prize from Google at the hackathon, but the real reward was having over 16,000 page views in the first 2 weeks! We had visitors from 44 different states and 39 countries. 
 
+
+
+ben-edelstein.com
+This is my personal website that I built in March, 2014. Its (limited) backend is based on python and flask, while in front it's standard html/css/js. For now, the only page other than the spalsh screen is this projects page; however, I will soon integrate a blog and other content. I certainly f
