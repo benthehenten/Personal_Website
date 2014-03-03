@@ -15,7 +15,7 @@ $( function() {
 	}
 
 	$("a[href='#projects']").click(function (e) {
-		$("html, body").animate({ scrollTop: $(".projectspage").offset().top }, 1000, "easeInOutCubic");
+		$("html, body").animate({ scrollTop: $(".projectspage").offset().top }, 1600, "easeInOutCirc");
 		return false;
 });
 });

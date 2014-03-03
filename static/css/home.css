@@ -15,6 +15,7 @@ a{
 	height: 4rem;
 	background-color: rgb(254, 253, 245);	
 	width: 100%;
+	padding: 0 1rem ;
 }
 
 .fixed{
@@ -31,6 +32,7 @@ a{
 .navbar .buttons{
 	float: right;
 	height: 4rem;
+	margin: -.5rem 2rem;
 
 }
 .navbar .content{
@@ -39,12 +41,19 @@ a{
 }
 
 .navbar .button{
-	height: 2rem;
-	width: 2rem;
+	height: 2.5rem;
+	width: 2.5rem;
 	padding: .1rem;
-	font-size: 1.3rem;
+	font-size: 1.6rem;
 	border: 3px solid; 
 	margin-top: 1rem; 
+}
+.navbar .buttoninner{
+	top: 50%;
+	left: 0;
+	right: 0;
+	height: 3rem;
+	margin-top: -1.5rem; 
 }
 
 
@@ -61,6 +70,30 @@ a{
 .projectspage{
 	height: 100vh;
 	background-color: #3878CC;
+}
+
+img{
+	height: 20rem;
+}
+
+.project{
+	background-color: white;
+
+}
+.projectimage{
+	display: inline;
+
+	float: left;
+}
+.projectcontent{
+	width: 80%;
+}
+
+.bodytext{
+	color: #54546B;
+    font-family: 'Varela Round', sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem; 
 }
 
 .nametext {
