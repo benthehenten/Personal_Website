@@ -2,8 +2,8 @@ $( function() {
 	if(!Modernizr.touch){
 		var linear = ["purple", "blue", "red", "orange", "green"];
 		var random1 = ["purple", "green", "blue", "orange", "red"];
-		var rightleft= ["purple", "blue", "red", "orange", "green", "orange", "red", "blue", "purple"]
-		setTimeout(linearFlash, 500, 0, rightleft);
+		var rightleft= ["purple", "green", "red", "orange", "blue", "orange", "red", "green", "purple"]
+		setTimeout(linearFlash, 800, 0, rightleft);
 		function linearFlash(index, colors){
 			var $button = $(".main ." + colors[index]);
 			$button.addClass("hover");
@@ -37,7 +37,7 @@ $( function() {
 				animating = true; 
 				console.log(direction);
 				if(direction == "bottom"){
-					setTimeout(function(){$(".navbar").addClass("fixed");}, 500)
+					setTimeout(function(){$(".navbar").addClass("fixed");}, 400)
 					$("html, body").animate({ 
 						scrollTop: $(".projectspage").offset().top }, 
 						1000, "easeInOutCirc", function (){	
