@@ -103,7 +103,7 @@ img{
 	padding: 1rem;
 	border: .3rem #54546B solid;
 	display: inline-block;
-	min-height: 100%;
+	height: 100%;
 
 }
 .pictures{
@@ -241,7 +241,7 @@ img{
 	border-color: #B22D12; 
 }
 
-@media only screen and (min-width: 769px){
+@media only screen and (min-width: 1025px){
 .red:hover, .hover.red{
 	color: white;
 	background-color: #B22D12;
@@ -268,7 +268,7 @@ img{
 	border-color: #36C235; 
 }
 }
-@media only screen and (max-width: 768px){
+@media only screen and (max-width: 1024px){
 	html{
 		font-size: 10px;
 	}
@@ -276,6 +276,7 @@ img{
 	.project{
 		width: auto;
 		margin-top: 5rem;
+		height: auto;
 	}
 	.projectcontent{
 		position: relative;
@@ -302,6 +303,9 @@ img{
 @media only screen and (max-width: 480px){
 	html{
 		font-size: 10px;
+	}
+	.navbar{
+		display: none;
 	}
 
 	.description{

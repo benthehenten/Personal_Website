@@ -1,9 +1,22 @@
 $( function() {
-	if(!Modernizr.touch){
-		var linear = ["purple", "blue", "red", "orange", "green"];
-		var random1 = ["purple", "green", "blue", "orange", "red"];
-		var rightleft= ["purple", "green", "red", "orange", "blue", "orange", "red", "green", "purple"]
-		setTimeout(linearFlash, 800, 0, rightleft);
+	
+		$("a[href='#projects']").click(function(e) {
+			if($(window).width() >= 768){
+				e.preventDefault(); 
+				scrollto("bottom");
+			}
+		});
+
+
+		$("a[href='#top']").click(function(e) {
+			
+			if($(window).width() >= 768){
+				e.preventDefault();
+				scrollto("top");
+			}
+
+		});
+
 		function linearFlash(index, colors){
 			var $button = $(".main ." + colors[index]);
 			$button.addClass("hover");
@@ -14,27 +27,24 @@ $( function() {
 				}
 			}, 35);
 		}
-		setTimeout(function() {
-			if($(window).scrollTop() > 0){
-				$(".navbar").addClass("fixed");
+
+		$(window).bind('wheel mousewheel', function(e){
+			if($(window).width() >= 768){	
+				console.log(e.originalEvent.wheelDelta);
+				e.preventDefault();
+				if(e.originalEvent.deltaY >= 0 || e.originalEvent.wheelDelta >= 0){
+					scrollto("bottom");
+				}else{
+					scrollto("top");
+				}
+
 			}
-		},200);
-
-		var animating = false; 
-
-		$("a[href='#projects']").click(function() {
-			scrollto("bottom");
-			return false;
-		});
-
-		$("a[href='#top']").click(function() {
-			scrollto("top");
-			return false;
-		});
+		})
 
 		function scrollto(direction) {
 			if(!animating){
 				animating = true; 
+				console.log("scroll captured");
 				console.log(direction);
 				if(direction == "bottom"){
 					setTimeout(function(){$(".navbar").addClass("fixed");}, 400)
@@ -52,14 +62,23 @@ $( function() {
 			}
 		}
 
-		$(window).bind('wheel', function(e){
-			e.preventDefault();
-			if(e.originalEvent.wheelDelta <= 0){
-				scrollto("bottom");
-			}else{
-				scrollto("top");
-			}
 
-		})
+	if($(window).width() >= 768){
+		var linear = ["purple", "blue", "red", "orange", "green"];
+		var random1 = ["purple", "green", "blue", "orange", "red"];
+		var rightleft= ["purple", "green", "red", "orange", "blue", "orange", "red", "green", "purple"]
+		setTimeout(linearFlash, 800, 0, rightleft);
+		
+		setTimeout(function() {
+			if($(window).scrollTop() > 0){
+				$(".navbar").addClass("fixed");
+			}
+		},200);
+
+		var animating = false; 
+
+		
+
+		
 	}
 });
