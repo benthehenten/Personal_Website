@@ -30,13 +30,27 @@ $( function() {
 
 		$(window).bind('wheel mousewheel', function(e){
 			if($(window).width() >= 768){	
-				console.log(e.originalEvent.wheelDelta);
+				console.log(" wheel delta: " + e.originalEvent.wheelDelta);
+				console.log(" delta Y: " + e.originalEvent.delta);
 				e.preventDefault();
-				if(e.originalEvent.deltaY >= 0 || e.originalEvent.wheelDelta >= 0){
+
+				var delta = Math.max(-1, Math.min(1, (e.originalEvent.wheelDelta || -e.originalEvent.detail)));
+
+				if(delta < 0){
 					scrollto("bottom");
-				}else{
+				}else if(delta > 0){
 					scrollto("top");
 				}
+
+				// if(e.originalEvent.deltaY >= 0){
+				// 	scrollto("bottom");
+				// }else if(e.originalEvent.deltaY < 0){
+				// 	scrollto("top");
+				// }else if(e.originalEvent.delta >= 0){
+				// 	scrollto("bottom");
+				// }else{
+				// 	scrollto("top");
+				// }
 
 			}
 		})
