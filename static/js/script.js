@@ -1,5 +1,8 @@
 $( function() {
-	
+
+
+		//scroll and buttons:
+
 		$("a[href='#projects']").click(function(e) {
 			if($(window).width() >= 768){
 				e.preventDefault(); 
@@ -53,7 +56,7 @@ $( function() {
 				// }
 
 			}
-		})
+		});
 
 		function scrollto(direction) {
 			if(!animating){
@@ -78,6 +81,14 @@ $( function() {
 
 
 	if($(window).width() >= 768){
+		
+		$('#carousel').slick({
+			  infinite: true,
+			  slidesToShow: 2,
+			  slidesToScroll: 2
+		});
+
+
 		var linear = ["purple", "blue", "red", "orange", "green"];
 		var random1 = ["purple", "green", "blue", "orange", "red"];
 		var rightleft= ["purple", "green", "red", "orange", "blue", "orange", "red", "green", "purple"]
