@@ -96,7 +96,7 @@ $( function() {
 		  arrows: true,
 		  responsive: [
 		    {
-		      breakpoint: 1200,
+		      breakpoint: 1300,
 		      settings: {
 		        centerMode: false,
 		        centerPadding: '80px',
