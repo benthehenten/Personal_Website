@@ -82,17 +82,45 @@ $( function() {
 
 	if($(window).width() >= 768){
 		
+		// $('#carousel').slick({
+		// 	  infinite: true,
+		// 	  slidesToShow: 2,
+		// 	  slidesToScroll: 2
+		// });
+
 		$('#carousel').slick({
-			  infinite: true,
-			  slidesToShow: 2,
-			  slidesToScroll: 2
+		  centerMode: true,
+		  centerPadding: '80px',
+		  slidesToShow: 1,
+		  variableWidth: true,
+		  responsive: [
+		    {
+		      breakpoint: 768,
+		      settings: {
+		        arrows: false,
+		        centerMode: true,
+		        centerPadding: '40px',
+		        slidesToShow: 1
+		      }
+		    },
+		    {
+		      breakpoint: 480,
+		      settings: {
+		        arrows: false,
+		        centerMode: true,
+		        centerPadding: '40px',
+		        slidesToShow: 1
+		      }
+		    }
+		  ]
 		});
+
 
 
 		var linear = ["purple", "blue", "red", "orange", "green"];
 		var random1 = ["purple", "green", "blue", "orange", "red"];
 		var rightleft= ["purple", "green", "red", "orange", "blue", "orange", "red", "green", "purple"]
-		setTimeout(linearFlash, 800, 0, rightleft);
+		//setTimeout(linearFlash, 800, 0, rightleft);
 		
 		setTimeout(function() {
 			if($(window).scrollTop() > 0){

@@ -54,7 +54,7 @@ hr{
 	  -moz-animation: fadeInUp .75s ease;
 	  -o-animation: fadeInUp .75s ease;
 	  animation: fadeInUp .75s ease;
-	  -webkit-animation-delay: 2.4s;
+	  -webkit-animation-delay: 1.5s;
 	  animation-delay: .25s;
 	  -webkit-animation-fill-mode: both;
 	  animation-fill-mode: both;
@@ -75,7 +75,7 @@ hr{
 
 .navbar .nametext{
 	color: rgb(254, 253, 245);
-	font-size: 2.7rem;
+	font-size: 2.2rem;
 	float: left;
 	margin: .5rem;
 }
@@ -102,8 +102,8 @@ hr{
 .navbar .buttoninner{
 	top: 50%;
 	left: 0;
+	margin-top: -0.8rem; 
 	right: 0;
-	margin-top: -.8rem; 
 	height: 2rem;
 }
 
@@ -133,17 +133,19 @@ hr{
 img{
 	height: 10rem;
 	max-width: 100%;
+	margin: 0 auto;
 }
 
 .project{
 	background-color: white;
 	border-radius: 10px;
-	width: 45%;
+  	width: 300px;
 	padding: 1rem;
 	border: .3rem #54546B solid;
 	display: inline-block;
 	height: 100%;
-	padding: 10px;
+	position: relative;
+	margin: 0 30px;
 
 }
 .pictures{
@@ -155,8 +157,13 @@ img{
 	float: right;
 }
 
+/*.slick-prev:before, .slick-next:before{
+	font-size: 40px !important;
+
+}*/
+
 .projectcontent{
-	width: 85%;
+	width: 90%;
 	margin: 0 auto;
 	max-width: 70rem;
 	position: absolute;
@@ -178,7 +185,7 @@ img{
     color: #54546B;
     font-family: 'Varela Round', sans-serif;
     font-weight: 400;
-    font-size: 5rem; 
+    font-size: 4rem; 
     text-align: center;
     margin: 1rem;
 }
@@ -364,7 +371,7 @@ img{
 	}
 	.projectcontent{
 		position: relative;
-		margin-top: 0;
+		margin-top: 20%;
 		top: inherit;
 
 	}
@@ -381,6 +388,12 @@ img{
 	.buttons{
 		max-width: 320px !important; 
 		margin: 0 auto;
+	}
+	.buttoninner{
+		line-height: 30px !important;
+	}
+	.navbar .buttoninner{
+		margin-top: -1.5rem;
 	}
 
 }
