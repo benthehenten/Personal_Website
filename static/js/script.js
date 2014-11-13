@@ -91,23 +91,21 @@ $( function() {
 		$('#carousel').slick({
 		  centerMode: true,
 		  centerPadding: '80px',
-		  slidesToShow: 1,
+		  slidesToShow: 3,
 		  variableWidth: true,
+		  arrows: true,
 		  responsive: [
 		    {
-		      breakpoint: 768,
+		      breakpoint: 1200,
 		      settings: {
-		        arrows: false,
-		        centerMode: true,
-		        centerPadding: '40px',
-		        slidesToShow: 1
+		        centerMode: false,
+		        centerPadding: '80px',
+		        slidesToShow: 2
 		      }
 		    },
 		    {
-		      breakpoint: 480,
+		      breakpoint: 900,
 		      settings: {
-		        arrows: false,
-		        centerMode: true,
 		        centerPadding: '40px',
 		        slidesToShow: 1
 		      }

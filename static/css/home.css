@@ -126,6 +126,7 @@ hr{
 
 .projectspage{
 	min-height: 100%;
+	width: 100%;
 	position: relative;
 	background-color: #3878CC;
 }
@@ -157,18 +158,38 @@ img{
 	float: right;
 }
 
-/*.slick-prev:before, .slick-next:before{
-	font-size: 40px !important;
+.slick-prev, .slick-next{
 
-}*/
+	bottom: -25% !important;
+	top: auto !important;
+	font-size: 40px !important;
+	width: 50px !important;
+	height: 50px !important;
+
+}
+
+.slick-prev{
+
+	left: 30% !important;
+}
+
+.slick-next{
+
+	right: 30% !important;
+
+}
+
+.slick-prev:before, .slick-next:before{
+	font-size: 40px !important;
+}
 
 .projectcontent{
-	width: 90%;
+	width: 100%;
 	margin: 0 auto;
-	max-width: 70rem;
+	max-width: 150rem;
 	position: absolute;
 	top: 50%;
-	margin-top: -12rem;
+	margin-top: -20%;
 	height: 24rem;
 	left: 0;
 	right: 0; 
