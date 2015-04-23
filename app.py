@@ -10,7 +10,7 @@ def hello():
 
 @app.route("/iplog/<ip>")
 def log(ip):
-	with open('ip.txt', 'r+') as f:
+	with open('ip.txt', 'w') as f:
 		f.write(ip)
 	return render_template("home.html")
 
