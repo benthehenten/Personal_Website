@@ -1,5 +1,8 @@
 from flask import Flask, jsonify, render_template
 import requests
+import datetime
+now = datetime.datetime.now()
+
 
 app = Flask(__name__)
 app.config["DEBUG"] = True
@@ -11,6 +14,7 @@ def hello():
 @app.route("/iplog/<ip>")
 def log(ip):
 	with open('ip.txt', 'w') as f:
+		f.write(str(now) + "\n")
 		f.write(ip)
 	return render_template("home.html")
 
