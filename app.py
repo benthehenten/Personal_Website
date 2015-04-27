@@ -18,6 +18,13 @@ def log(ip):
 		f.write(ip)
 	return render_template("home.html")
 
+@app.route("/iplog2/<ip>")
+def log2(ip):
+	with open('ip2.txt', 'w') as f:
+		f.write(str(now) + "\n")
+		f.write(ip)
+	return render_template("home.html")
+
 @app.errorhandler(404)
 def page_not_found(error):
     return "Whoops." , 404
